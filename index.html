@@ -9,39 +9,38 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
 <body>
+  <nav>
+    <div class="nav-wrapper blue lighten-2">
+      <a href="#" class="brand-logo center">Let it Go</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <header>
-      <h1>Let it Go</h1>
-      <p>Your journey to emotional healing</p>
-    </header>
-    
-    <div id="progress-tracker">
-      <h2>Day 3 of 30</h2>
-      <div class="progress-circle">
-        <svg>
-          <circle cx="40" cy="40" r="35"></circle>
-          <circle cx="40" cy="40" r="35" id="progress"></circle>
-        </svg>
-        <div class="progress-text">10%</div>
+    <div class="section">
+      <h5 class="center">Day 3 of 30</h5>
+      <div class="progress">
+        <div class="determinate blue" style="width: 10%"></div>
       </div>
     </div>
 
-    <div id="daily-tasks">
-      <h3>Today's Tasks</h3>
-      <ul>
-        <li>Delete old photos</li>
-        <li>Write down 3 things you appreciate about yourself</li>
-        <li>Meditate for 5 minutes</li>
+    <div class="section">
+      <h5>Today's Tasks</h5>
+      <ul class="collection">
+        <li class="collection-item">Delete old photos</li>
+        <li class="collection-item">Write down 3 things you appreciate about yourself</li>
+        <li class="collection-item">Meditate for 5 minutes</li>
       </ul>
     </div>
 
-    <div id="actions">
-      <button onclick="showMeditations()">Meditations</button>
-      <button onclick="showCheckIn()">Emotional Check-In</button>
-      <button onclick="showTriggers()">Triggers to Avoid</button>
+    <div class="section center">
+      <a class="waves-effect waves-light btn blue" onclick="showMeditations()">Meditations</a>
+      <a class="waves-effect waves-light btn blue" onclick="showCheckIn()">Emotional Check-In</a>
+      <a class="waves-effect waves-light btn blue" onclick="showTriggers()">Triggers to Avoid</a>
     </div>
   </div>
 
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
